@@ -16,7 +16,7 @@ export default function Home() {
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      const response = await fetch('https://railwaynodejsbackend-production.up.railway.app/users');
+      const response = await fetch('https://railwaynodejsbackend-production-184a.up.railway.app/users');
       if (!response.ok) {
         throw new Error('Failed to fetch users');
       }
@@ -38,7 +38,7 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://railwaynodejsbackend-production.up.railway.app/users', {
+      const response = await fetch('https://railwaynodejsbackend-production-184a.up.railway.app/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
